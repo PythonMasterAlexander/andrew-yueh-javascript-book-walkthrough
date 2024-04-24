@@ -11,6 +11,7 @@
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "http-server": "^14.1.1",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "3.2.5",
@@ -22,12 +23,11 @@
   },
   "scripts": {
     "build": "sass ./src/scss:./dist/styles",
-    "start": "",
+    "start": "concurrently \"http-server -o --proxy http://localhost:8080\" \"sass --watch ./src/scss:./dist/styles\" ",
     "prepare": "husky install",
     "check-format": "yarn prettier ./src/js/**/*.js --check",
     "format": "yarn prettier ./src/js/**/*.js --write",
     "lint": "yarn eslint ./src/js/**/*.js"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

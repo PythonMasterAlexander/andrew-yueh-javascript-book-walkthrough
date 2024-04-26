@@ -1,4 +1,4 @@
-import helloWorld from './page-scripts/chapter-3.js'
+import outputChapterThreePageHtml from './page-scripts/chapter-3.js'
 
 function pageRouter() {
   // Get URL location
@@ -10,7 +10,7 @@ function pageRouter() {
     case '/index.html':
       break
     case '/src/pages/chapter-3.html':
-      helloWorld()
+      outputChapterThreePageHtml()
   }
 }
 pageRouter()

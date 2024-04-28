@@ -1,5 +1,4 @@
-// Dynamic menu in JS
-//
+import outputChapterThreePageHtml from './page-scripts/chapter-3.js'
 
 function pageRouter() {
   // Get URL location
@@ -10,6 +9,8 @@ function pageRouter() {
     case '/':
     case '/index.html':
       break
+    case '/src/pages/chapter-3.html':
+      outputChapterThreePageHtml()
   }
 }
 pageRouter()

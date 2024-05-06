@@ -13,6 +13,22 @@
   function playerAboveSkillAndAge(players, skill) {
     let skilledPlayer = players;
     for (let i = 0; i < players.length; i++) {
+      let objectKey = 'skill';
+      if (players[i].objectKey < skill) {
+        skilledPlayer.push(players);
+      }
     }
+    return skilledPlayer;
+  }
+
+  function playersAboveAge(players, age) {
+    let agedPlayers = players;
+    for (let i = 0; i < agedPlayers; i++) {
+      let objectKey = 'age';
+      if (players[i].objectKey < age) {
+        agedPlayers.push(players);
+      }
+    }
+    return agedPlayers; 
   }
 */

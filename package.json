@@ -27,9 +27,9 @@
     "watch-sass": "sass --watch ./src/scss:./dist/styles",
     "start": "concurrently \"live-server .\" \"sass --watch ./src/scss:./dist/styles\" ",
     "prepare": "husky install",
-    "check-format": "yarn prettier ./src/scripts/**/*.js --check",
-    "format": "yarn prettier ./src/scripts/**/*.js --write",
-    "lint": "yarn eslint ./src/scripts/**/*.js"
+    "check-format": "prettier ./src/scripts/**/*.js --check",
+    "format": "prettier ./src/scripts/**/*.js --write",
+    "lint": "eslint ./src/scripts/**/*.js"
   },
   "dependencies": {}
 }
